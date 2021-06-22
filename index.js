@@ -5,12 +5,12 @@ const http = require('http');
 const hostname = '0.0.0.0';
 const port = 3331;
 
-const MY_MESSAGE = process.env.MY_MESSAGE
+//const MY_MESSAGE = process.env.MY_MESSAGE
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.end(MY_MESSAGE);
+  res.end("Hello Qovery");
 });
 
 

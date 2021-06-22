@@ -3,7 +3,7 @@
 const http = require('http');
 
 const hostname = '0.0.0.0';
-const port = 3333;
+const port = 3331;
 
 const MY_MESSAGE = process.env.MY_MESSAGE
 
@@ -20,14 +20,14 @@ server.listen(port, hostname, () => {
 });
 /////////////////////////////////////////////////
 
-const express = require('express');
-const port1 = 3333;
-const app = express();
+// const express = require('express');
+// const port1 = 3333;
+// const app = express();
 
 
 //const secret = require('./config');
-app.get('/', (req,res)=>res.send("Hello World."));
-app.listen(port1,()=>console.log("Hello Terminal."));
+// app.get('/', (req,res)=>res.send("Hello World."));
+// app.listen(port1,()=>console.log("Hello Terminal."));
 
 
 // // connect node to mongodb

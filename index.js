@@ -1,6 +1,7 @@
 const express = require('express');
 const port1 = 5001;
 const app = express();
+const mongoose = require('mongoose');
 
 const secret = require('./config');
 app.use('/', (req,res)=>res.send("Hello World."));

@@ -1,6 +1,5 @@
 module.exports = {
-    //database: 'mongodb://localhost:27017/shopper',
-    //database: 'mongodb://root:rMjv2GhGVF6tGjtP@shopper-ypt87d92krfgox6l-svc.qovery.io:27017/shopper',
+    //database: 'mongodb://localhost:27017/shopper',    
     port: process.env.PORT || 3000,
     secretKey: "supersecret",
     facebook: {

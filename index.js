@@ -1,33 +1,33 @@
 
 
-const http = require('http');
+// const http = require('http');
 
-const hostname = '0.0.0.0';
-const port = 3331;
+// const hostname = '0.0.0.0';
+// const port = 3331;
 
-//const MY_MESSAGE = process.env.MY_MESSAGE
+// //const MY_MESSAGE = process.env.MY_MESSAGE
 
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end("Hello Qovery");
-});
+// const server = http.createServer((req, res) => {
+//   res.statusCode = 200;
+//   res.setHeader('Content-Type', 'text/plain');
+//   res.end("Hello Qovery");
+// });
 
 
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
+// server.listen(port, hostname, () => {
+//   console.log(`Server running at http://${hostname}:${port}/`);
+// });
 /////////////////////////////////////////////////
 
-// const express = require('express');
-// const port1 = 3333;
-// const app = express();
+const express = require('express');
+const port1 = 3333;
+const app = express();
 
 
-//const secret = require('./config');
-// app.get('/', (req,res)=>res.send("Hello World."));
-// app.listen(port1,()=>console.log("Hello Terminal."));
+const secret = require('./config');
+app.get('/', (req,res)=>res.send("Hello World."));
+app.listen(port1,()=>console.log("Hello Terminal."));
 
 
 // // connect node to mongodb

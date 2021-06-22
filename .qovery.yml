@@ -1,15 +1,15 @@
 ---
 application:
-  name: "shopper-api-git-hub"
-  project: "shopper"
+  name: "test"
+  project: "test"
   organization: "QoveryCommunity"
 databases:
   - type: "MONGODB"
     name: "shopper"
     version: "4.4"
 routers:
-  - name: "main-shopper-api-git-hub"
+  - name: "main-test"
     routes:
-      - application_name: "shopper-api-git-hub"
+      - application_name: "test"
         paths:
           - "/*"

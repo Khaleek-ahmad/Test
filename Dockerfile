@@ -1,4 +1,4 @@
 FROM node
-COPY app.js .
+COPY index.js .
 EXPOSE 3333
 CMD [ "node", "index.js" ]

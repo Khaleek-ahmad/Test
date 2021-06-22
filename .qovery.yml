@@ -1,0 +1,15 @@
+---
+application:
+  name: "test1"
+  project: "test1"
+  organization: "QoveryCommunity"
+databases:
+- type: "MONGODB"
+  name: "test1"
+  version: "4.4"
+routers:
+- name: "main-test1"
+  routes:
+  - application_name: "test1"
+    paths:
+    - "/*"
